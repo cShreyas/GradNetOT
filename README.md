@@ -1,22 +1,15 @@
 # GradNetOT
 
 <p align="center">
-  <img src="figures/morph/04/t0.0.png" width="100" />
-  <img src="figures/morph/04/t0.25.png" width="100" />
-  <img src="figures/morph/04/t0.5.png" width="100" />
-  <img src="figures/morph/04/t0.75.png" width="100" />
-  <img src="figures/morph/04/t1.0.png" width="100" />
+  <img src="figures/morph/04/t0.0.png" width="120" />
+  <img src="figures/morph/04/t0.25.png" width="120" />
+  <img src="figures/morph/04/t0.5.png" width="120" />
+  <img src="figures/morph/04/t0.75.png" width="120" />
+  <img src="figures/morph/04/t1.0.png" width="120" />
 </p>
 
-**GradNetOT** learns a Monge map between probability densities \( p \) and \( q \) using a monotone gradient network (mGradNet) [1, 2] to solve the Monge–Ampère equation:
+**GradNetOT** learns a Monge map between probability densities by training a monotone gradient network (mGradNet) [1, 2] to solve the Monge–Ampère equation.
 
-\[
-p(x) = q(T(x)) \cdot \det \left( J_{T}(x) \right)
-\]
-
-Here, \( T \) is an mGradNet and therefore has a **positive semidefinite Jacobian**, meaning it corresponds to the **gradient of a convex potential**.
-
----
 
 ## References
 
